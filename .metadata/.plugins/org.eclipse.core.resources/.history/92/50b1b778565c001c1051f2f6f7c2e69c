@@ -1,0 +1,28 @@
+public class sample
+{
+	public static void main(String[] args)
+	{
+		System.out.println("This is my Java Begineer to Advance Practice");
+	}
+}
+class B
+{
+	private static void main(String[] args) {
+		System.out.println("B is Main class");
+	}
+}
+class C
+{
+	private static void main(String[] args) {
+		System.out.println("C is Main class");
+	}
+}
+class D
+{
+	
+}
+/*
+ * class D { private static void main(String[] args) {
+ * System.out.println("D is Main Class"); } }
+ */
+

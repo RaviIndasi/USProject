@@ -1,0 +1,11 @@
+
+public class RoughWork {
+
+	public static void main(String[] args) {
+		//String Literal
+		String s = "This is Ravi Shastri";
+		System.out.println(s.split(" "));
+
+	}
+
+}

@@ -1,0 +1,17 @@
+import java.util.Arrays;
+
+public class RoughWork {
+
+	public static void main(String[] args) {
+		//String Literal
+		String s = "Welcome to the Java Program";
+		String[] splittedString = s.split(" ");
+		System.out.println(splittedString);
+		
+		String[] helloWorld = {"Hello", "World"};
+		System.out.println(helloWorld);
+		System.out.println(Arrays.toString(helloWorld));
+
+	}
+
+}

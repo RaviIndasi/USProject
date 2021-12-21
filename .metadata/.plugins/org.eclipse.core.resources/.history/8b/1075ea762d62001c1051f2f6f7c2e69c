@@ -1,0 +1,50 @@
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import net.jodah.failsafe.internal.util.Assert;
+
+public class JavaBasics {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\14699\\eclipse\\BrowserPath\\chromedriver.exe");		
+		WebDriver d = new ChromeDriver();
+		
+		
+//		d.get("https://rahulshettyacademy.com/#/index");
+//		d.get("http://demo.guru99.com/test/delete_customer.php");
+		d.get("http://demo.guru99.com/popup.php");
+		d.manage().window().maximize();
+		
+		System.out.println(d.getTitle());
+		System.out.println(d.getCurrentUrl());
+		WebElement customerBox = d.findElement(By.name("cusid"));
+		customerBox.sendKeys("518454431");
+		WebElement submit = d.findElement(By.name("submit"));
+		submit.click();
+		
+		
+		Alert alert = d.switchTo().alert();
+		String alertMessage = d.switchTo().alert().getText();
+//		alert.accept();
+		alert.dismiss();
+		Thread.sleep(1000);
+		
+//		alert.accept();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//d.quit();
+		
+	} 
+
+}

@@ -1,0 +1,57 @@
+
+public class Loops {
+
+	public static void main(String[] args) {
+		//Arrays
+				int[] arr = new int[5];
+				arr[0] = 1;
+				arr[1] = 2;
+				arr[2] = 3;
+				arr[3] = 4;
+				arr[4] = 5;
+				System.out.println(arr[3]);
+				
+				int[] arr2 = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+				System.out.println(arr2[1]);
+				System.out.println("========================ARRAYS ENDED====================================");
+				
+				//Loops
+				//For Loop with Numbers
+				for(int i = 0; i<arr2.length; i++) 
+				{
+					System.out.println(arr2[i]);
+					
+				}
+				//For Loop with String
+				String[] name = {"Ravi", "Vijay", "Narendra"};
+				for(int i = 0; i<name.length; i++)
+				{
+					System.out.println(name[i]);
+					
+				}
+				
+				//Enhanced For-Loop Syntax
+				
+				for( String s: name)
+				{
+					System.out.println(s);
+				}
+				
+				//IF-Else Loop Syntax
+				for(int i = 0; i<arr2.length; i++)
+				{
+					if(arr2[i] % 2 == 0)
+					{
+						System.out.println(arr2[i] +"values is multipled by 2");
+						break;
+					}else
+					{
+						System.out.println(arr2[i] + "values is not multipled by 2");
+					}
+				}
+					
+			}
+
+	}
+
+

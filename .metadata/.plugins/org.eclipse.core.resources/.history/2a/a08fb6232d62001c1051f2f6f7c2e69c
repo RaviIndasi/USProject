@@ -1,0 +1,13 @@
+import org.openqa.selenium.Alert;
+
+public class Elements {
+
+	public void alert()
+	{
+		Alert alert = d.switchTo().alert();
+		String alertMessage = d.switchTo().alert().getText();
+//		alert.accept();
+
+	}
+
+}
